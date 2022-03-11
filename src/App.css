@@ -1,0 +1,285 @@
+:root {
+    --dark-mode-elements:hsl(209,23%,22%);
+    --dark-mode-bg:hsl(207, 26%, 17%);
+
+    --light-mode-elements:#fff;
+    --light-mode-bg:hsl(0, 0%, 98%);
+  }
+  .app{
+      background-color: var(--light-mode-bg);
+      min-height: 100vh;
+      height: 100%;
+  }
+  .app.darkMode{
+      background-color: var(--dark-mode-bg);
+      color: white;
+  }
+.header{
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgb(0.0, 0.0, 0.1);
+}
+.header.darkMode{
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+.first{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: large;
+}
+
+.switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+
+}
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgb(0.0, 0.0, 0.1);
+    width: 300px;
+    padding: 5px;
+    gap: 5px;
+
+}
+.search.darkMode{
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+.search.darkMode input{
+    color: white;
+}
+
+.search input {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+}
+
+.region{
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgb(0.0, 0.0, 0.1);
+    border: none;
+    /* width: 300px; */
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.region.darkMode{
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+.slct{
+    padding: 5px;
+    width:  100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.slct.darkMode{
+    color: white;
+}
+.slct.app.darkMode option{
+    background-color: var(--dark-mode-elements);
+    color: white;
+}
+.search.app.darkMode input::placeholder{
+    color: white;
+}
+.search-body{
+    margin: 25px auto 0;
+    padding: 15px;
+    max-width: 1440px;
+}
+
+  .country{
+      /* max-width: 1440px;  */
+      padding: 35px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 35px;
+    
+  }
+  .countries{
+      background-color: white;
+      width: 305px;
+      box-shadow: 0px 2px 15px rgba(0.0, 0.0, 0.0, 0.2);
+      border-radius: 4px;
+      height: 370px;
+      cursor: pointer;
+  }
+  .countries.darkMode{
+      background-color: var(--dark-mode-elements);
+      color: white;
+  }
+  .flag{
+      height: 170px;
+      width:100%;
+  }
+  .image{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .name{
+      margin-bottom: 15px;
+  }
+  .values{
+      color: gray;
+  }
+  .values.darkMode{
+      color: lightgray;
+  }
+  .details{
+      padding: 0px;
+      margin-left: 10px;
+  }
+  .card-text{
+      margin-bottom: 0px;
+      padding: 0px;
+      margin-left: 10px;
+  }
+
+  .country_detail{
+      margin: 15px auto 0;
+      padding: 10px;
+      max-width: 1440px;
+      min-height: 100vh;
+  }
+  .back {
+      background-color: white;
+      border-radius: 4px;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      font-size: 15px;
+      box-shadow: 0px 4px 15px rgba(0.0, 0.0, 0.0, 0.3);
+      margin-bottom: 15px;
+      width: 100px;
+      height: 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+  }
+  .back.darkMode{
+      background-color: var(--dark-mode-elements);
+      color: white;
+  }
+  .back_body{
+      margin: 15px auto 0;
+      padding: 10px; 
+      max-width: 1440px;
+      justify-content: flex-start;
+      display:flex;
+      align-items: center;
+      gap: 25px;
+  }
+  .img_container{
+      object-fit: cover;
+      margin-bottom: 10px;
+      margin-right: 25px;
+  }
+  .img_container img {
+      object-fit: cover;
+  height: 270px;
+  width: 450px;
+  margin-right: 15px;
+  }
+  .info{
+      flex: 0.5;
+  }
+  .info.darkMode{
+      color: white;
+  }
+  .info_container{
+      margin-bottom: 45px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  
+  .side_info p {
+      margin-top: 10px;
+  }
+  .nam{
+      margin-bottom: 5px;
+      
+  }
+  h2{
+      margin: 5px auto 0;
+  }
+  .info_values{
+      color: gray;
+  }
+  .info_values.darkMode{
+      color: lightgray;
+  }
+  .border {
+      background-color: white;
+      padding: 5px 10px;
+      display: inline-block;
+      margin: 10px;
+      cursor: pointer;
+      box-shadow:  0px 4px 15px rgba(0.0, 0.0, 0.0, 0.2);
+  }
+  .border.darkMode{
+      background-color: var(--dark-mode-elements);
+      color: white;
+  }
+
+  @media(max-width:800px) {
+      .back_body{
+          flex-direction: column;
+      }
+      .info_container{
+          flex-direction: column;
+          align-items: flex-start;
+      }
+      
+      .img_container{
+          flex-direction: column;
+          
+      }
+     
+  }
+  @media (max-width: 720px){
+      .inputs{
+          flex-direction: column;
+          margin-bottom: 15px;
+      }
+      .search{
+          margin-bottom: 20px;
+      }
+      .switch{
+          font-size: 12px;
+          flex: 0.5;
+          justify-content: flex-end;
+      }
+      .header{
+          flex: 0.5;
+          font-size: 17px;
+      }
+  }
+      
+  
